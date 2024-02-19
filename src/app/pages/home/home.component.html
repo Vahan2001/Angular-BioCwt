@@ -1,0 +1,95 @@
+<div class="web-site">
+    <div class="back-cl">
+        <div class="back-img">
+            <header>
+                <div class="container">
+                    <nav>
+                        <div class="nav-flex d-f">
+                            <div class="nav-logo">
+                                <a href="#"><img src="assets/images/logo.png" alt="logo-image"></a>
+                            </div>
+                            <div class="nav-menu">
+                                <ul>
+                                    <li *ngFor="let menuItem of menuArr">
+                                        <a routerLink="{{menuItem.url}}" routerLinkActive="active">{{menuItem.label}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-mobile__menu">
+                                <div>
+                                    <label for="toggle-menu"><img src="assets/images/menu-logo2.png"
+                                            alt="logo-menu"></label>
+                                </div>
+                                <input type="checkbox" hidden id="toggle-menu">
+                                <div class="mobile-menu-block">
+                                    <div class="text-left"><label for="toggle-menu"><img
+                                                src="assets/images/menu-logo.png" alt="logo-menu"></label></div>
+                                    <div>
+                                        <ul>
+                                            <li *ngFor="let menuItem of menuArr" class="mobile-menu-block-item">
+                                                <a routerLink="{{menuItem.url}}" routerLinkActive="active">{{menuItem.label}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-title">
+                    <div class="hader-title__flex d-f">
+                        <div class="title-block">
+                            <h1>Solid wood products</h1>
+                            <p>Oak, beech, ash from 1700 CZK per m3</p>
+                            <a href="#">Order</a>
+                        </div>
+                        <div class="title-line">
+                            <img src="assets/images/line.png" alt="line-img">
+                        </div>
+                        <div class="title-line2">
+                            <img src="assets/images/linemedia.png" alt="line-img">
+                        </div>
+                        <div class="title-block__img">
+                            <div class="title-img__flex d-f">
+                                <div class="title-img1">
+                                    <img src="assets/images/image3.png" alt="image">
+                                </div>
+                                <div class="title-img2">
+                                    <img src="assets/images/image.png" alt="image">
+                                    <img src="assets/images/image2.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <app-the-wood [elements]="woodDatas"></app-the-wood>
+                <app-our-work [elements]="ourWorkDatas"></app-our-work>
+                <section class="section3">
+                    <div class="container">
+                        <div class="section3-title">
+                            <h3>Advantages working with us</h3>
+                        </div>
+                        <div class="section3-flex d-f">
+                            <div class="section3-img">
+                                <img src="assets/images/image9.png" alt="image">
+                            </div>
+                            <div class="section3-text">
+                                <p>In-house carpentry production</p>
+                                <p>We only treat wood with environmentally friendly and safe products</p>
+                                <p>Prices from the manufacturer, no extra charges</p>
+                            </div>
+                        </div>
+                        <div class="section3-button t-c">
+                            <a href="#">Receive a consultation</a>
+                        </div>
+                    </div>
+                </section>
+                <app-about-us></app-about-us>
+                <app-any-questions></app-any-questions>
+            </main>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

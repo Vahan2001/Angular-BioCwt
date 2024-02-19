@@ -1,0 +1,24 @@
+<section class="section3">
+    <div class="container">
+        <div class="section3-title">
+            <h4>Any questions?</h4>
+        </div>
+        <div class="section3-flex d-f">
+            <div class="section3-inputs">
+                <form [formGroup]="form">
+                    <input type="text" formControlName="name" placeholder="Your name">
+                    <span *ngIf="form.get('name')?.hasError('required') && (form.get('name')?.dirty || form.get('name')?.touched)">The Name is required</span>
+                    <input type="tel" formControlName="tel" placeholder="Your telephone number">
+                    <span *ngIf="form.get('tel')?.hasError('required') && (form.get('tel')?.dirty || form.get('tel')?.touched)">The Tel is required</span>
+                    <span *ngIf="form.get('tel')?.hasError('pattern') && (form.get('tel')?.dirty || form.get('tel')?.touched)">+0771234567</span>
+                    <textarea formControlName="question" placeholder="Your question"></textarea>
+                    <span *ngIf="form.get('question')?.hasError('required') && (form.get('question')?.dirty || form.get('question')?.touched)">Your question is required</span>
+                    <button [disabled]="form.invalid" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="section3-img">
+                <img src="assets/images/image13.png" alt="image">
+            </div>
+        </div>
+    </div>
+</section>

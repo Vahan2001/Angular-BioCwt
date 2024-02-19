@@ -1,0 +1,186 @@
+/* SECTION 3 CSS START  */
+form > span {
+    display: block;
+    padding-bottom: 10px;
+    color: red;
+    font-family: 'KyivType Sans';
+    font-style: normal;
+}
+input.ng-dirty.ng-invalid {
+    border: 2px solid red;
+}
+.section3 {
+    padding-top: 190px;
+}
+.section3-title > h4 {
+    text-align: end;
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    padding-bottom: 45px;
+}
+.section3-flex {
+    justify-content: space-evenly;
+}
+.section3-inputs {
+    width: 48%;
+}
+.section3-inputs > form > input {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    border: 4px solid #728BAD;
+    border-radius: 42px;
+    background-color: #ffffff00;
+    width: 598px;
+    padding: 14px 0 14px 20px;
+    margin-bottom: 23px;
+    color: wheat;
+}
+textarea {
+    border: 4px solid #728BAD;
+    border-radius: 42px;
+    background-color: #ffffff00;
+    width: 598px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    padding: 14px 0 14px 20px;
+    height: 257px;
+    color: wheat;
+}
+.section3-text {
+    width: 45%;
+}
+button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #F5F5F5;
+    background: #728BAD;
+    border-radius: 42px;
+    padding: 9px 68.5px;
+    margin-top: 40px;
+    transition-duration: 0.5s;
+    border: none;
+}
+button:hover {
+    background: #fcfcfc;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.section3-img > img {
+    width: 100%;
+    margin: 140px 0px -193px 0;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.section3-img > img:hover {
+    transform: rotate(5deg);
+}
+/* SECTION 3 CSS END  */
+/* MEDIA */
+@media screen and (max-width: 1250px) {
+    .section3 {
+        padding-top: 80px;
+    }
+    .section3-title > h4 {
+        font-size: 70px;
+    }
+    .section3-inputs > form > input {
+        font-size: 28px;
+        line-height: 100.4%;
+        width: 460px;
+    }
+    textarea {
+        width: 460px;
+        font-size: 28px;
+        line-height: 100.4%;
+        height: 185px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .section3-title > h4 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .section3-inputs > form > input {
+        font-size: 18px;
+        line-height: 47.4%;
+        width: 350px;
+    }
+    textarea {
+        width: 350px;
+        font-size: 18px;
+        line-height: 50%;
+        height: 160px;
+    }
+    button {
+        font-size: 19px;
+        line-height: 29px;
+        padding: 4px 59.5px;
+        margin-top: 20px;
+    }
+    .section3-img > img {
+        margin: 64px 0px -109px 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .section3-title > h4 {
+        font-size: 45px;
+        text-align: start;
+    }
+    .section3-flex {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .section3-inputs {
+        width: 100%;
+        order: 2;
+    }
+    .section3-text {
+        width: 100%;
+        order: 1;
+    }
+    .section3-img > img {
+        display: none;
+    }
+    .section3-inputs > form > input {
+        width: 500px;
+    }
+    textarea {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .section3-title > h4 {
+        font-size: 30px;
+        padding-bottom: 11px;
+    }
+    .section3-inputs > form > input {
+        width: 324px;
+        font-size: 13px;
+    }
+    textarea {
+        width: 324px;
+        font-size: 13px;
+    }
+    button {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 2.5px 25.5px;
+        margin-top: 20px;
+        margin-bottom: 93px;
+    }
+}

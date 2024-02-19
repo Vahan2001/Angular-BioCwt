@@ -1,0 +1,98 @@
+/* SECTION 2 CSS START  */
+.section2-title > h2 {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    padding: 236px 300px 125px 240px;
+}
+.section2-flex {
+    justify-content: space-evenly;
+}
+.section2-flex h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 39px 0;
+}
+.section2-flex p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #F5F5F5;
+    padding-bottom: 24px;
+}
+.section2-block1, .section2-block2, .section2-block3 {
+    width: 22%;
+}
+.section2-block1 > img, .section2-block2 > img, .section2-block3 > img {
+    margin-left: 40px;
+    transition: all 0.5s;
+    transform: scale3d(1, 1, 1);
+}
+.section2-block1 > img:hover, .section2-block2 > img:hover, .section2-block3 > img:hover {
+    transform: scale3d(1.2, 1.2, 1.5);
+}
+/* SECTION 2 CSS END  */
+/* MEDIA */
+@media screen and (max-width: 1250px) {
+    .section2-title > h2 {
+        font-size: 60px;
+        line-height: 105.9%;
+        padding: 149px 266px 76px 217px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .section2-title > h2 {
+        font-size: 55px;
+        padding: 100px 132px 75px 217px;
+    }
+    .section2-flex h4 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .section2-block1 > img, .section2-block2 > img, .section2-block3 > img {
+        margin-left: 20px;
+        width: 75%;
+    }
+    .section2-flex p {
+        font-size: 20px;
+        line-height: 27px;
+        padding-bottom: 5px;
+    }
+    .section2-block1 > p > img, .section2-block2 > p > img, .section2-block3 > p > img {
+        width: 8%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .section2-title > h2 {
+        font-size: 38px;
+        padding: 50px 20px 50px 20px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .section2-title > h2 {
+        font-size: 30px;
+    }
+    .section2-flex h4 {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 16px 0 20px;
+    }
+    .section2-flex p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .section2-block1, .section2-block2, .section2-block3 {
+        width: 30%;
+    }
+}

@@ -1,0 +1,112 @@
+.back-cl {
+    background-image: url('src/assets/images/bcimg.png');
+    background-repeat: no-repeat;
+    background-color: #222021;
+}
+/* MAIN CSS START  */
+/* SECTION 1 CSS START  */
+.section1-map > iframe {
+    border-radius: 42px;
+}
+.section1-flex {
+    padding: 180px 0 291px;
+}
+.section1-title {
+    width: 50%;
+}
+.section1-title > h1 {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    color: #F5F5F5;
+}
+.info-tel {
+    padding-bottom: 33px;
+    padding-top: 118px;
+}
+.info-nav, .info-tel {
+    padding-right: 130px;
+}
+.info-tel > a, .info-nav > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    color: #F5F5F5;
+    text-decoration: none;
+} 
+.section1-map {
+    width: 50%;
+}
+/* SECTION 1 CSS END  */
+/* MAIN CSS END  */
+/* MEDIA */
+@media screen and (max-width: 1250px) {
+    .section1-title > h1 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .mapw {
+        width: 400px !important;
+    }
+    .info-nav, .info-tel {
+        padding-right: 30px;
+    }
+    .info-tel {
+        padding-top: 60px;
+    }
+    .section1-flex {
+        padding: 180px 0 106px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .section1-title > h1 {
+        font-size: 45px;
+        text-align: start;
+    }
+    .info-tel > a, .info-nav > a {
+        font-size: 18px;
+    }
+    .info-tel > img, .info-nav > img {
+        width: 40px;
+    }
+    .section1-flex {
+        flex-wrap: wrap;
+    }
+    .section1-title {
+        width: 100%;
+    }
+    .section1-map {
+        width: 100%;
+        padding-top: 49px;
+    }
+    .section1-title > h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+    .mapw {
+        width: 600px !important;
+    }
+}
+@media screen and (max-width: 650px) {
+    .section1-flex {
+        padding: 23px 0 106px;
+    }
+    .info-tel {
+        padding-top: 41px;
+        text-align: start;
+    }
+    .info-nav, .info-tel {
+        padding-right: 15px;
+        text-align: start;
+    }
+    .mapw {
+        width: 347px !important;
+        height: 230px !important;
+    }
+}

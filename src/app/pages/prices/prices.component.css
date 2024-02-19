@@ -1,0 +1,160 @@
+.back-cl {
+    background-image: url('src/assets/images/bcimg.png');
+    background-repeat: no-repeat;
+    background-color: #222021;
+}
+/* MAIN CSS START */
+/* SECTION 1 CSS START */
+.section1-title > h1 {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    padding: 116px 0 116px 238px;
+}
+.section1-flex {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 67px;
+}
+.section1-table > table, .section1-table2 > table {
+    background: #D9D9D9;
+    border-radius: 42px;
+    border-collapse: collapse;
+}
+.section1-table > table > tbody > tr > th, .section1-table2 > table > tbody > tr > th {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 132.9%;
+    color: #1E0C06;
+    text-align: start;
+    border-bottom: 1px solid rgba(142, 57, 33, 0.37);
+    padding-left: 15px;
+}
+.section1-table > table > tbody > tr > td, .section1-table2 > table > tbody > tr > td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 132.9%;  
+    color: #000000;
+    border-bottom: 1px solid rgba(142, 57, 33, 0.37);
+    padding-left: 15px;
+
+}
+/* SECTION 1 CSS END */
+/* MAIN CSS END */
+/* MEDIA */
+@media screen and (max-width: 1350px) {
+    .table1__1, .table1__2 {
+        width: 555px !important;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .table1__1, .table1__2 {
+        width: 435px !important;
+    }
+    .table2__1, .table2__2 {
+        width: 400px !important;
+    }
+    .section1-table > table > tbody > tr > th, .section1-table2 > table > tbody > tr > th {
+        font-size: 20px;
+    }
+    .section1-table > table > tbody > tr > td, .section1-table2 > table > tbody > tr > td {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .section1-title > h1 {
+        font-size: 66px;
+        padding: 60px 0 60px 238px;
+    }
+    .table1__1, .table1__2 {
+        width: 335px !important;
+        height: 280px !important;
+    }
+    .section1-table > table > tbody > tr > td, .section1-table2 > table > tbody > tr > td {
+        font-size: 15px;
+    }
+    .section1-table > table > tbody > tr > th, .section1-table2 > table > tbody > tr > th {
+        font-size: 15px;
+    }
+    .table2__1, .table2__2 {
+        width: 300px !important;
+        height: 280px !important;
+    }
+    .section1-flex {
+        padding-bottom: 40px;
+        justify-content: space-evenly;
+    }
+    .section-right__img {
+        text-align: end;
+    }
+    .section1-circle__img > img {
+        width: 10%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .section1-title > h1 {
+        font-size: 50px;
+        padding: 60px 0 60px 169px;
+    }
+    .table1__1, .table1__2 {
+        width: 235px !important;
+        height: 280px !important;
+    }
+    .section1-table > table > tbody > tr > td, .section1-table2 > table > tbody > tr > td {
+        font-size: 10px;
+    }
+    .section1-table > table > tbody > tr > th, .section1-table2 > table > tbody > tr > th {
+        font-size: 10px;
+    }
+    .table2__1, .table2__2 {
+        width: 200px !important;
+        height: 280px !important;
+    }
+    .section-left__img > img, .section-right__img > img {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .section1-title > h1 {
+        font-size: 30px;
+        padding: 29px 0 57px 30px;
+    }
+    .table1__1, .table1__2 {
+        width: 135px !important;
+        height: 200px !important;
+    }
+    .section1-table > table > tbody > tr > td, .section1-table2 > table > tbody > tr > td {
+        font-size: 8px;
+        padding-left: 0;
+        line-height: 15px;
+    }
+    .section1-table > table > tbody > tr > th, .section1-table2 > table > tbody > tr > th {
+        font-size: 8px;
+        padding-left: 0;
+        line-height: 7px;
+    }
+    .table2__1, .table2__2 {
+        width: 100px !important;
+        height: 200px !important;
+    }
+    .section1-table > table, .section1-table2 > table {
+        border-radius: 20px;
+    }
+    .section-left__img > img, .section-right__img > img {
+        width: 46%;
+    }
+    .b-r {
+        border-radius: 0 19px 0 0 !important;
+    }
+    .b-r2 {
+        border-radius: 0 0 19px 0 !important;
+    }
+}

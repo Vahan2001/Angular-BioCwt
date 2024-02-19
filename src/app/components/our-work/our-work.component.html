@@ -1,0 +1,16 @@
+<section class="section1">
+    <div class="container">
+        <div class="section1-title">
+            <h3>Our work</h3>
+        </div>
+        <div class="section1-flex d-f">
+            <img src="assets/images/left.png" (click)="prewImg()" class="slider-next" alt="img-left">
+        <div class="slider">
+            <div class="slider-line" #sliderLine >
+                <img *ngFor="let item of elements" src={{item.image}} alt="slide1-img">
+            </div>
+        </div>
+        <img src="assets/images/right.png" (click)="nextImg()" class="slider-prev" alt="img-right">
+        </div>
+    </div>
+</section>

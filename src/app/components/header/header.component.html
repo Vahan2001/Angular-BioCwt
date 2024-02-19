@@ -1,0 +1,36 @@
+<header>
+    <div class="nav-bg">
+        <div class="container">
+            <nav>
+                <div class="nav-flex d-f">
+                    <div class="nav-logo">
+                        <a routerLink="/home"><img src="assets/images/logo.png" alt="logo-image"></a>
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li *ngFor="let menuItem of menuArr">
+                                <a routerLink="{{menuItem.url}}" routerLinkActive="active">{{menuItem.label}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-mobile__menu">
+                        <div>
+                            <label for="toggle-menu"><img src="assets/images/menu-logo2.png" alt="logo-menu"></label>
+                        </div>
+                        <input type="checkbox" hidden id="toggle-menu">
+                        <div class="mobile-menu-block">
+                            <div class="text-left"><label for="toggle-menu"><img src="assets/images/menu-logo.png" alt="logo-menu"></label></div>
+                            <div>
+                                <ul>
+                                    <li *ngFor="let menuItem of menuArr" class="mobile-menu-block-item">
+                                        <a routerLink="{{menuItem.url}}" routerLinkActive="active">{{menuItem.label}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

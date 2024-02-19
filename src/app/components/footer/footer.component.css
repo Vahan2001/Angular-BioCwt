@@ -1,0 +1,119 @@
+/* FOOTER CSS START  */
+footer {
+    background-color: #222021;
+    padding-top: 70px;
+    position: relative;
+}
+.footer-flex {
+    justify-content: space-evenly;
+}
+.footer-tel > a, .footer-nav > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    color: #F5F5F5;
+    display: inline-block;
+    margin-left: 18px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.footer-tel > a:hover, .footer-nav > a:hover {
+    color: #589fff;
+}
+.footer-pol > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 139.4%;
+    color: #F5F5F5;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 110px;
+    transition-duration: 0.5s;
+}
+.footer-pol > a:hover {
+    color: #589fff;
+}
+.footer-text > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;    
+    text-align: right;
+    color: #F5F5F5;
+    padding: 0 110px 0 0px;
+}
+.footer-pol, .footer-text {
+    width: 50%;
+}
+.footer-flex2 {
+    padding-top: 58px;
+}
+/* FOOTER CSS END  */
+/* MEDIA */
+@media screen and (max-width: 1250px) {
+    .footer-text > p {
+        font-size: 26px;
+        line-height: 130.4%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .footer-text > p {
+        font-size: 19px;
+        padding: 0px 30px 0 0px;
+    }
+    .footer-tel > a, .footer-nav > a {
+        font-size: 21px;
+        line-height: 98.4%;
+        margin-left: 5px;
+    }
+    .footer-pol > a {
+        margin: 25px 0 25px 30px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .footer-flex {
+        flex-wrap: wrap;
+    }
+    .footer-logo, .footer-tel, .footer-nav {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .footer-pol {
+        text-align: center;
+    }
+    .footer-pol > a {
+        margin: 15px 0 25px 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    .footer-logo {
+        order: 1;
+    }
+    .footer-nav {
+        order: 2;
+    }
+    .footer-tel {
+        order: 3;
+    }
+    .footer-nav > img, .footer-tel > img {
+        width: 18px;
+    }
+    .footer-pol > a {
+        font-size: 11px;
+    }
+    .footer-text {
+        display: none;
+    }
+    .footer-pol {
+        width: 100%;
+    }
+    .footer-flex2 {
+        padding-top: 1px;
+    }
+}

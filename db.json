@@ -1,0 +1,43 @@
+{
+    "woodWorkDatas" : [
+        {
+            "image": "assets/images/image4.png",
+            "title": "Oak",
+            "description1": "Durability",
+            "description2": "Beautiful ",
+            "description3": "Water resistance",
+            "description4": "Expensive",
+            "imageChild1": "assets/images/vector.png",
+            "imageChild2": "assets/images/vector.png", 
+            "imageChild3": "assets/images/vector.png", 
+            "imageChild4": "assets/images/vectorx.png"
+        },
+        {
+            "image": "assets/images/image5.png",
+            "title": "Bush",
+            "description1": "Durability",
+            "description2": "Hard to handle",
+            "imageChild1": "assets/images/vector.png", 
+            "imageChild2": "assets/images/vectorx.png"
+        },
+        {
+            "image": "assets/images/image6.png",
+            "title": "Ash",
+            "description1": "Durability",
+            "description2": "Hard to handle",
+            "imageChild1": "assets/images/vector.png", 
+            "imageChild2": "assets/images/vectorx.png"
+        }
+    ],
+    "ourWorkDatas": [
+        {
+            "image": "assets/images/image7.png"
+        },
+        {
+            "image": "assets/images/slide2.webp"
+        },
+        {
+            "image": "assets/images/slide3.jpg"
+        }
+    ]
+}
